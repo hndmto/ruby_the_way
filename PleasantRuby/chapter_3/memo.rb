@@ -25,9 +25,31 @@ puts "#{num0} + #{num1} = #{num0 + num1}"
 #filename2 = ARGV[0]
 #print File.read(filename2)
 
-filename = ARGV[0]
-file = File.open(filename)
-  file.each_line do |line|
-    print line
-  end
-file.close
+#filename = ARGV[0]
+#file = File.open(filename)
+#  file.each_line do |line|
+#    print line
+#  end
+#file.close
+
+def hello
+  puts "Hello, Ruby."
+end
+
+hello()
+
+require "date"
+
+days = Date.today - Date.new(1923, 2, 24)
+puts(days.to_i)
+
+require "pp"
+
+books = [
+  { title: "猫街", auther: "薪原朔太郎"},  
+  { title: "猫の事務所", auther: "宮沢賢治"},  
+  { title: "猫語教科書", auther: "ポール・ギャリコ"},
+]
+
+p books
+pp books  
