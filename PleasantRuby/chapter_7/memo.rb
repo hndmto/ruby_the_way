@@ -74,3 +74,23 @@ p meth(z: 4, y: 3, x: 2)
 p meth(z: 4, y: 3, x: 2, v: 4, k: 9)
 
 p meth({x: 2, y: 3})
+
+def foo(a, b, c)
+  a+b+c
+end
+
+p foo(1,2,3)
+
+args1 = [2,3]
+p foo(1, *args1)
+
+args2 = [1,2,3]
+p foo(*args2)
+
+def foo(arg)
+  arg
+end
+
+p foo({"a"=>1, "b"=>2})
+p foo("a"=>1, "b"=>2)
+p foo(a:1, b:2)
